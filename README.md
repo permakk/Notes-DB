@@ -5,18 +5,21 @@
 4. melihat detail note
 5. melihat keseluruhan note
 
+# database
+buat database baru dengan nama "notes_db"
+
 # instalasi yang diperlukan
-# nodemon
+## nodemon
 npm install nodemon -g
-# pada folder backend
+## pada folder backend
 npm install axios react-router-dom dotenv
-# pada folder frontend
+## pada folder frontend
 npm install react-router-dom axios bulma
-# extension "REST Client"
+## extension "REST Client"
 untuk menguji API
 
 # cara run
-# backend
+## backend
 npm start
-# frontend
+## frontend
 nodemon index
