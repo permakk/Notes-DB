@@ -1,0 +1,206 @@
+
+:root {
+  --main-color: #71c6e7;
+  --second-color: #13a4e7;
+  --white: white;
+  --red: rgb(223, 77, 77);
+}
+.card {
+  width: 100%; /* Pastikan card mengambil lebar penuh dari kolom */
+  max-width: 100%; /* Tidak melebihi lebar kolom */
+  margin-bottom: 1px; /* Berikan margin bawah antar card */
+  padding: 10px 30px 40px;
+}
+
+.button {
+  background-color: transparent;
+  border-color: var(--white);
+  border-width: 2px;
+  color: var(--white);
+  font-weight: bolder;
+}
+
+.button:hover {
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+  color: var(--white);
+}
+
+.details{
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+
+}
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color); /* Warna navbar */
+  padding: 10px; /* Padding agar lebih rapi */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  margin-left: 50px;
+}
+
+.navbar-item {
+  color: var(--white);
+}
+/* Tombol Add New di navbar */
+.navbar .button {
+  margin-right: 70px; /* Memberikan sedikit jarak dengan tepi kanan */
+  margin-top: 6px;
+}
+
+/* Jarak antara navbar dan body */
+.main-content {
+  padding-top: 70px; /* Memberikan jarak antara navbar dan konten */
+  padding: 70px;
+}
+
+.card .card-content {
+  max-height: 300px; /* Batasi tinggi card */
+  padding: 20px; /* Pastikan ada ruang di dalam card */
+}
+
+.card .title,
+.card .content {
+  white-space: nowrap; /* Jangan biarkan teks membungkus ke baris berikutnya */
+  overflow: hidden;     /* Sembunyikan teks yang melebihi ruang */
+  text-overflow: ellipsis; /* Tambahkan '...' di akhir teks yang dipotong */
+}
+
+.card .content {
+  max-height: 100px; /* Batasi tinggi untuk bagian note */
+}
+
+.column.is-4-desktop {
+  padding: 10px; /* Jarak antar card di desktop */
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+
+.content {
+  font-size: 1rem;
+}
+
+.textarea {
+  width: 100%;  /* Lebar penuh sesuai dengan kontainer */
+  height: 150px; /* Mengatur tinggi textarea */
+  resize: both; /* Mengizinkan pengguna untuk mengubah ukuran */
+}
+
+.subtitle .note_date {
+  color: var(--second-color);
+}
+
+.subtitle .note_time {
+  color: var(--red);
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+
+  .navbar .button {
+    margin-right: 10px;
+  }
+
+  .main-content {
+    padding: 15px;
+    padding-top: 50px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+
+  .navbar .button {
+    font-size: 0.8rem;
+    margin-right: 5px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card .title,
+  .card .content {
+    white-space: normal; /* Allow text wrapping */
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .content {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 3px;
+  }
+
+  .navbar-brand {
+    font-size: 0.9rem;
+    margin-left: 5px;
+  }
+
+  .navbar .button {
+    font-size: 0.7rem;
+    margin-right: 3px;
+  }
+
+  .card {
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    font-size: 0.7rem;
+  }
+}
