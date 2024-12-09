@@ -16,7 +16,7 @@ npm install react-router-dom axios bulma
 untuk menguji API
 
 # cara run
-# bacend
+# backend
 npm start
 # frontend
 nodemon index
